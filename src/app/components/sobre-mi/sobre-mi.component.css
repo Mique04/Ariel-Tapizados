@@ -1,0 +1,27 @@
+.contenedor {
+    height: 100%;
+}
+.contenedor-1 {
+    height: 50vh;
+    padding: 5%;
+}
+.contenedor-2 {
+    height: 50vh;
+    padding: 5%;
+}
+.contenedor-img-1 {
+    background-image: url(../../../assets/Img-Ariel-Tapizados/Sobre-mi-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.contenedor-img-2 {
+    background-image: url(../../../assets/Img-Ariel-Tapizados/Sobre-mi-2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+button {
+    border: 0px #fff solid;
+    width: 35%;
+}

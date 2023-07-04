@@ -1,0 +1,45 @@
+.contenedor {
+  height: 100%;
+}
+.contenedor-1 {
+  background-image: url(../../../assets/Img-Ariel-Tapizados/Trabajo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.contenedor-2 {
+  padding: 3%;
+}
+.contenedor-proceso {
+  height: 60vh;
+  overflow: auto;
+}
+h1 {
+  font-size: 5vw;
+}
+
+.bi {
+  font-size: 3em;
+}
+
+.contenedor-carousel {
+  height: 100%;
+}
+.carousel-content {
+  height: 60%;
+}
+.btn-up-down {
+  height: 20%;
+}
+.active.carousel-item-end,.carousel-item-next:not(.carousel-item-start){
+    transition-property: all !important;
+    transition-timing-function: ease-in-out !important;
+    transition-duration: .1s !important;
+    transform: translateY(100%) !important;
+}
+.active.carousel-item-start,.carousel-item-prev:not(.carousel-item-end){
+    transition-property: all !important;
+    transition-timing-function: ease-in-out !important;
+    transition-duration: .1s !important;
+    transform:translateY(-100%) !important;
+}
