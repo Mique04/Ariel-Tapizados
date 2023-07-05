@@ -1,0 +1,21 @@
+h1 {
+    font-size: 4vw;
+}
+p {
+  font-weight: 200;
+  font-size: 14px;
+}
+.testimonios {
+    height: 100vh;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
