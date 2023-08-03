@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ariel-Tapizados';
+  public dataLoaded: boolean = false;
+
+  @HostListener('window:load', ['$event'])
+  onWindowLoad(event: Event) {
+    this.dataLoaded = true;
+  }
 }

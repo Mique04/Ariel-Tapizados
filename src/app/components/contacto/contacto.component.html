@@ -1,24 +1,30 @@
 <section class="container-fluid contenedor-contacto">
-    <div class="row h-100 p-5 c-5">
-        <article class="contenedor-1 col-md-6 p-5 position-relative d-flex justify-content-start align-items-center">
-            <h1 class="title px-4">Contacto</h1>
-            <div class="d-flex justify-content-start align-items-center position-absolute top-0 py-1 px-4">
-                <img src="../../../assets/Img-Ariel-Tapizados/Logo.ico" alt="Img-Ariel-Tapizados" class="bg-dark m-1">
-                <h4 class="fw-bold text-uppercase fs-6 m-1">Ariel Tapizados</h4>
-            </div>
+    <div class="row h-100 p-md-5 p-2 c-5">
+        <article class="contenedor-1 col-md-5 p-md-5 position-relative d-flex justify-content-start align-items-center">
+            <a href="#inicio">
+                <div class="d-flex justify-content-start align-items-center position-absolute top-0 py-1 px-md-4 d-inline" id="logo" type="button">
+                    <img src="../../../assets/Img-Ariel-Tapizados/Logo.ico" alt="Img-Ariel-Tapizados" class="bg-dark m-1">
+                    <h4 class="fw-bold text-uppercase fs-6 m-1 c-5">Ariel Tapizados</h4>
+                </div>
+            </a>
+            <h1 class="title px-md-4">Contacto</h1>
         </article>
-        <article class="contenedor-2 col-md-6 p-5 d-flex flex-column justify-content-between">
-            <ul class="no-decoration">
-                <li class="pb-4">Grand Bourg<br>Paso de Uspallata 2305<br>Buenos Aires, Argentina</li>
-                <li class="py-4">Tel: (+54) 11 5476-6567<br>Email: ariel7480@hotmail.com</li>
-            </ul>
-            <div class="px-4 mx-1">
-                <button class="fw-bold text-uppercase bg-transparent c-5 py-3 px-5 border-0 button-2 mx-1" type="button">
-                    Ver ubicacion
-                </button>
-                <button class="fw-bold text-uppercase bg-4 c-5 border-0 py-3 px-5 mx-1" type="button">
-                    enviar mensaje
-                </button>
+        <article class="contenedor-2 col-md-7 p-md-5 d-flex flex-column justify-content-around justify-content-md-between">
+            <div>
+                <div class="pb-4">Grand Bourg<br>Paso de Uspallata 2305<br>Buenos Aires, Argentina</div>
+                <div class="py-4">Tel: (+54) 11 5476-6567<br>Email: ariel7480@hotmail.com</div>
+            </div>
+            <div class="d-inline-flex flex-md-row flex-column align-items-start">
+                <a href="https://www.google.com/maps/place/Ariel+Tapizados/@-34.4803133,-58.7353023,18.25z/data=!4m6!3m5!1s0x95bca379880820ed:0x322f9662135a23bf!8m2!3d-34.4802811!4d-58.7333835!16s%2Fg%2F11jsf7myjg?entry=ttu" target="_blank">
+                    <button class="fw-bold text-uppercase bg-transparent c-5 border-0 py-3 px-5 py-2 button-2 m-2 m-md-3" type="button" id="button-2">
+                        Ver ubicacion
+                    </button>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=54766567" target="_blank">
+                    <button class="fw-bold text-uppercase bg-4 c-5 border-0 py-3 px-5 py-2 m-2 m-md-3" id="button" type="button">
+                        enviar mensaje
+                    </button>
+                </a>
             </div>
         </article>
     </div>

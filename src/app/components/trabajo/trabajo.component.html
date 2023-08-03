@@ -1,15 +1,15 @@
-<div class="container-fluid row m-p-0 contenedor">
-    <section class="col-md-6 contenedor-1"></section>
-    <aside class="col-md-6 contenedor-2">
-        <h1 class="title c-2">Trabajos</h1>
+<div class="container-fluid row m-p-0 contenedor" id="trabajo">
+    <section class="col-md-6 contenedor-1" [ngClass]="{'left-in': fadeService.fadeIn_trabajo}"></section>
+    <aside class="col-md-6 contenedor-2 d-flex flex-column justify-content-around" [ngClass]="{'opacity-in': fadeService.fadeIn_trabajo}">
+        <h1 class="title c-2">Trabajo</h1>
         <div class="contenedor-proceso my-4">
-            <div id="carouselExampleControls" class="carousel slide contenedor-carousel d-flex flex-column justify-content-center">
+            <div id="carouselExampleControls" class="carousel slide contenedor-carousel d-flex flex-column justify-content-between">
                 <button class="btn-up-down bg-5 border-0" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span aria-hidden="true"><i class="bi bi-arrow-up-short c-3"></i></span>
                   </button>
-                <div class="carousel-inner d-flex flex-column justify-content-center carousel-content text-center">
+                <div class="carousel-inner d-flex flex-column justify-content-evenly carousel-content text-center">
                     <div *ngFor="let item of items; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
-                        <span class="m-3 p-2 fs-5 c-2 border">{{item.title}}</span>
+                        <h5 class="m-3 p-2 c-2 border text-center">{{item.title}}</h5>
                         <p class="p-3 c-1">{{item.description}}</p>
                     </div>
                 </div>
@@ -18,55 +18,10 @@
                 </button>
               </div>
         </div>
-        <button class="fw-bold text-uppercase py-sm-3 py-1 c-5 bg-4 border-0" type="button" routerLink="#sobremi">
-            Testimonios
-        </button>
+        <!-- <a href="#testimonios" (click)="fadeService.fadeIn2Sec_testimonios()">
+            <button class="fw-bold text-uppercase px-4 py-sm-3 py-1 c-5 bg-4 border-0" id="button-2" type="button">
+                Testimonios
+            </button>
+        </a> -->
     </aside>
 </div>
-
-
-
-
-
-
-
-
-
-<!-- <ol>
-    <li>
-        <span>Consulta inicial</span>
-        <p>El cliente se acerca al tapicero con su mueble en busca de asesoramiento y una estimación de costos para la reparación o tapizado.</p>
-    </li>
-    <li>
-        <span>Evaluación y presupuesto</span>
-        <p>El tapicero examina cuidadosamente el mueble, evalúa su estado y discute las opciones de reparación o tapizado con el cliente. Se proporciona un presupuesto detallado que incluye materiales y mano de obra.</p>
-    </li>
-    <li>
-        <span>Selección de telas y materiales</span>
-        <p>Si el cliente decide proceder, se le guía en la selección de telas, colores y materiales adecuados para el tapizado, asegurándose de que se ajusten a sus preferencias y estilo.</p>
-    </li>
-    <li>
-        <span>Desmontaje y preparación</span>
-        <p>El mueble se desmonta según sea necesario para acceder a las áreas a reparar o tapizar. Se retiran los tejidos antiguos y se realiza una limpieza adecuada del marco y las partes internas.</p>
-    </li>
-    <li>
-        <span>Reparación y relleno</span>
-        <p>Se llevan a cabo las reparaciones necesarias en el marco del mueble, como refuerzos, reemplazo de piezas dañadas o ajustes estructurales. Además, se realiza el relleno adecuado de cojines, asientos y respaldos para lograr el nivel de comodidad deseado.</p>
-    </li>
-    <li>
-        <span>Tapizado</span>
-        <p>El tapicero experto procede a tapizar el mueble utilizando las telas y materiales seleccionados. Se emplean técnicas profesionales para lograr un acabado impecable, asegurando que la tela esté tensa y sin arrugas.</p>
-    </li>
-    <li>
-        <span>Detalles finales</span>
-        <p>Se agregan los detalles finales, como ribetes, botones o adornos, según sea necesario o según las preferencias del cliente.</p>
-    </li>
-    <li>
-        <span>Inspección de calidad</span>
-        <p>El tapicero realiza una exhaustiva inspección de calidad para garantizar que el mueble esté en excelentes condiciones y cumpla con los estándares requeridos.</p>
-    </li>
-    <li>
-        <span>Entrega y satisfacción del cliente</span>
-        <p>Una vez finalizado el proceso, se contacta al cliente para coordinar la entrega del mueble reparado o tapizado. El tapicero se asegura de que el cliente esté satisfecho con el resultado final y ofrece cualquier asistencia adicional que pueda requerir.</p>
-    </li>
-</ol> -->

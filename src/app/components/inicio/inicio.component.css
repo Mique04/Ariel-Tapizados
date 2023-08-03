@@ -48,6 +48,25 @@ button {
   text-align: center;
   font-size: 1.5vw;
 }
+button:hover {
+  animation-name: aumentar-boton;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+button:not(:hover) {
+  animation-name: disminuir-boton;
+  animation-duration: .2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
 img {
   height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  button {
+    font-size: 2vw;
+  }
 }

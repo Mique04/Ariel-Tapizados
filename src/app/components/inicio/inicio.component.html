@@ -1,12 +1,12 @@
-<header class="inicio container-fluid">
+<header class="inicio container-fluid" id="inicio">
     <div class="row contenedor">
         <section class="col-md-5 d-md-block d-none order-md-1 order-2 contenedor-1">
-            <div class="d-flex justify-content-start align-items-center">
+            <div class="d-flex justify-content-start align-items-center opacity-in">
                 <img src="../../../assets/Img-Ariel-Tapizados/Logo.ico" alt="Img-Ariel-Tapizados" class="bg-dark m-1">
                 <h4 class="fw-bold text-uppercase fs-6 m-1">Ariel Tapizados</h4>
             </div>
         </section>
-        <aside class="col-md-7 p-5 mt-5 order-md-2 order-1 contenedor-2 c-5 ">
+        <aside class="col-md-7 p-5 mt-5 order-md-2 order-1 contenedor-2 c-5 left-in">
             <div class="d-md-none d-block title d-flex justify-content-start align-items-center mb-5 mb-md-1">
                 <img src="../../../assets/Img-Ariel-Tapizados/Logo.ico" alt="Img-Ariel-Tapizados" class="bg-dark m-1">
                 <h4 class="fw-bold text-uppercase fs-6 m-1">Ariel Tapizados</h4>
@@ -14,9 +14,11 @@
             <article class="d-flex flex-column justify-content-md-center justify-content-start contenido-principal my-5 my-md-1 p-2">
                 <h4 class="title">Ariel Tapizados</h4>
                 <h1 class="pb-3 title eslogan font-monospace">Tu hogar, tu estilo, nuestra experiencia. Elige lo mejor en tapicería</h1>
-                <button class="fw-bold text-uppercase py-sm-3 py-1 c-5 bg-4" type="button" routerLink="#sobremi">
-                    Conóceme
-                </button>
+                <a href="#sobremi" (click)="fadeService.fadeIn2Sec_sobremi()">
+                    <button class="fw-bold text-uppercase py-sm-3 py-1 c-5 bg-4" id="button" type="button">
+                        Conóceme
+                    </button>
+                </a>
             </article>
         </aside>
     </div>

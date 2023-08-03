@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { TrabajoComponent } from './components/trabajo/trabajo.component';
 import { TestimoniosComponent } from './components/testimonios/testimonios.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     SobreMiComponent,
     TrabajoComponent,
     TestimoniosComponent,
-    ContactoComponent
+    ContactoComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],

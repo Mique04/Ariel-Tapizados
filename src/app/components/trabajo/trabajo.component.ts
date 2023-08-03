@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FadeIn2SecService } from 'src/app/servicios/fade-in-2-sec/fade-in-2-sec.service';
 
 @Component({
   selector: 'app-trabajo',
@@ -6,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./trabajo.component.css']
 })
 export class TrabajoComponent {
+  public fadeService: FadeIn2SecService;
 
+  constructor(fadeIn2SecService: FadeIn2SecService) {
+    this.fadeService = fadeIn2SecService;
+  }
   
   items = [
     {

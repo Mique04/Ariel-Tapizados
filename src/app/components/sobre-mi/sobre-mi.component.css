@@ -25,3 +25,21 @@ button {
     border: 0px #fff solid;
     width: 35%;
 }
+button:hover {
+    animation-name: aumentar-boton;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  button:not(:hover) {
+    animation-name: disminuir-boton;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+@media screen and (max-width: 767px) {
+    p, button {
+        font-size: 3vw;
+    }
+  }

@@ -7,7 +7,7 @@
     font-family: 'Radley', serif !important;
 }
 
-
+/* ----------- scroll ----------- */
 ::-webkit-scrollbar {
     width: 9px;
 }
@@ -18,7 +18,7 @@
     background-color:#fff;
 }
 
-
+/* ----------- margin & padding ----------- */
 .m-p-0 {
     margin: 0%;
     padding: 0%;
@@ -57,4 +57,145 @@
 }
 .bg-5 {
     background-color: #fff;
+}
+
+/* ----------- animaciones ----------- */
+@keyframes aumentar-boton {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+        background-color: white;
+        color:#83a46f;
+      }
+}
+@keyframes disminuir-boton {
+    0% {
+        transform: scale(1.1);
+        background-color: white;
+        color:#83a46f;
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+#button:hover {
+    animation-name: aumentar-boton;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+#button:not(:hover) {
+    animation-name: disminuir-boton;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+@keyframes aumentar-boton-2 {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+        background-color: #323232;
+        color:#83a46f;
+      }
+}
+@keyframes disminuir-boton-2 {
+    0% {
+        transform: scale(1.1);
+        background-color: #323232;
+        color:#83a46f;
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+#button-2:hover {
+    animation-name: aumentar-boton-2;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+#button-2:not(:hover) {
+    animation-name: disminuir-boton-2;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes aumentar-logo {
+    0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+}
+@keyframes disminuir-logo {
+    0% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+#logo:hover {
+    animation-name: aumentar-logo;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+#logo:not(:hover) {
+    animation-name: disminuir-logo;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+/* ----------- ----------- */
+@keyframes left-in {
+    0% {
+        opacity: 0;
+        transform:translateX(-50%);
+      }
+      100% {
+        opacity: 1;
+        transform:translateX(0%);
+      }
+}
+.left-in {
+    animation-name: left-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes right-in {
+    0% {
+        opacity: 0;
+        transform:translateX(50%);
+      }
+      100% {
+        opacity: 1;
+        transform:translateX(0%);
+      }
+}
+.right-in {
+    animation-name: right-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes opacity-in {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+.opacity-in {
+    animation-name: opacity-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }

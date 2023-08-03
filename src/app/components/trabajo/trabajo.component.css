@@ -8,10 +8,14 @@
   height: 100vh;
 }
 .contenedor-2 {
+  height: 100vh;
   padding: 3%;
 }
 .contenedor-proceso {
-  height: 60vh;
+  height: 75vh;
+  overflow: auto;
+}
+.carousel-inner {
   overflow: auto;
 }
 h1 {
@@ -26,10 +30,10 @@ h1 {
   height: 100%;
 }
 .carousel-content {
-  height: 60%;
+  height: 76%;
 }
 .btn-up-down {
-  height: 20%;
+  height: 12%;
 }
 .active.carousel-item-end,.carousel-item-next:not(.carousel-item-start){
     transition-property: all !important;
@@ -42,4 +46,13 @@ h1 {
     transition-timing-function: ease-in-out !important;
     transition-duration: .1s !important;
     transform:translateY(-100%) !important;
+}
+@media screen and (max-width: 767px) {
+  button {
+      font-size: 3vw;
+      padding: 20px;
+  }
+  h1 {
+    font-size: 7vw;
+  }
 }
